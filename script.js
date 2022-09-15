@@ -5,7 +5,7 @@ const startBtn = document.getElementById("starts");
 const countdownOverlay = document.getElementById("countdown");
 const resultModal = document.getElementById("result");
 const modalBackground = document.getElementById("modal-background");
-
+// hello
 // variables
 let userText = "";
 let errorCount = 0;
