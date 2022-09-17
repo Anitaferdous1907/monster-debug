@@ -62,9 +62,11 @@ body {
   display: none;
 }
 #result {
-  position: fixed;
-  top: 10%; 
-  left: 10%;
+  position: relative;
+  align-items: center;
+  top: 10%;
+  left: 50%;
+  bottom: 900px;
   transform: translate(-50%, -50%);
   height: 250px;
   width: 400px;
@@ -74,6 +76,7 @@ body {
   color: white;
   text-align: center;
   padding: 2rem;
+  
 }
 #show-time{
   text-align: center;
@@ -143,7 +146,7 @@ button {
 
 #histories {
   display: flex;
-  flex-wrap: wrap;
+   flex-wrap: wrap; 
   justify-content: space-around;
 }
 
@@ -164,7 +167,7 @@ button {
     rgba(255, 255, 255, 0.05) 99.85%
   );
   backdrop-filter: blur(5px);
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #modal-background {
@@ -179,34 +182,37 @@ button {
   backdrop-filter: blur(5px);
   height: 100vh;
   width: 100%;
- /* position: fixed; */
- 
- 
-
- /*  top: 0; */
+  /* position: fixed; */
+  top: 0;
 }
 
 
-@media only screen and (min-width: 992px){
-  
+
+@media only screen and (max-width: 1200px) {
   
   .box-container {
     padding: 0 20px;
     width: 50%;
   }
+   #histories{
+    display: inline-block;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+  } 
   .card{
     flex-direction: column;
   }
-}
-@media only screen and (max-width: 700px)
+} 
+@media only screen  and (min-width: 701px)
  {
   .box-container {
     padding: 0 20px;
     width: 100%;
   }
   
+  
   .card {
-   
+   position: relative;
     flex-direction: column;
   }
 }
